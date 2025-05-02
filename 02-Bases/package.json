@@ -1,0 +1,32 @@
+{
+  "name": "02-bases",
+  "version": "0.0.1",
+  "description": "Some text here",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "build": "npm run test && rimraf ./dist && tsc",
+    "start": "node dist/app.js"
+  },
+  "author": "Luis Bórquez",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "uuid": "^11.0.5",
+    "winston": "^3.17.0"
+  }
+}

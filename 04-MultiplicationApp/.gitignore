@@ -1,0 +1,4 @@
+node_modules/
+outputs/
+coverage/
+.DS_Store

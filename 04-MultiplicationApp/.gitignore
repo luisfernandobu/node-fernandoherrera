@@ -1,4 +1,11 @@
+
+dist/
 node_modules/
 outputs/
+
+# testing
+test-destination/
 coverage/
+
+# macOS
 .DS_Store

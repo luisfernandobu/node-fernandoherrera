@@ -3,6 +3,7 @@
 2. Configurar las variables de entorno necesarias
 ```
 PORT=3000
+MAILER_SERVICE=gmail
 MAILER_EMAIL=
 MAILER_SECRET_KEY=
 PROD=false

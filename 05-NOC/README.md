@@ -7,3 +7,5 @@ MAILER_EMAIL=
 MAILER_SECRET_KEY=
 PROD=false
 ```
+3. Instalar dependencias: ```npm install``` | ```npm i```
+4. Ejecutar ```npm run dev``` para levantar la aplicación

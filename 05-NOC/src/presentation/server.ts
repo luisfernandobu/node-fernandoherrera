@@ -25,11 +25,7 @@ const emailService = new EmailService();
 
 export class ServerApp {
     public static async start() {
-        console.log('Server started...');
-
-        // const logs = await logRepository.getLogs();
-        // console.log(logs);
-        
+        console.log('Server started...');        
         
         /** Cron job example **/
         CronService.createJob(
@@ -57,21 +53,5 @@ export class ServerApp {
         //     <p>Ver logs adjuntos.</p>
         //     `
         // });
-
-        // emailService.sendEmailWithFileSystemLogs([
-        //     'luis_fernando_1997@hotmail.com',
-        //     'luis.borquezu@outlook.com',
-        //     'eeocdl@hotmail.com'
-        // ]);
-
-        /** Send logs email use-case example **/
-        // new SendEmailLogs(
-        //     emailService,
-        //     fileSystemLogRepository
-        // ).execute([
-        //     'luis_fernando_1997@hotmail.com',
-        //     'luis.borquezu@outlook.com',
-        //     'eeocdl@hotmail.com'
-        // ]);
     }
 }

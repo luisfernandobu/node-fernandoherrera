@@ -1,6 +1,5 @@
 import { envs } from "./config/plugins/envs.plugin";
-import { LogModel, MongoDatabase } from "./data/mongodb";
-import { PrismaClient } from "./data/postgresql/generated/prisma";
+import { MongoDatabase } from "./data/mongodb";
 import { ServerApp } from "./presentation/server";
 
 (async() => {

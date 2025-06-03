@@ -8,3 +8,6 @@ logs/
 /mongo
 /postgres
 /src/data/postgresql/generated/prisma
+/mongo-test
+/postgres-test
+.env.test

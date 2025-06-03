@@ -1,6 +1,5 @@
 import fs from 'fs';
-
-import { LogDatasource } from "../../domain/datasources/log.datasouce";
+import { LogDatasource } from "../../domain/datasources/log.datasource";
 import { LogEntity, LogSeverityLevel } from "../../domain/entities/log.entity";
 
 export class FileSystemDatasource implements LogDatasource {

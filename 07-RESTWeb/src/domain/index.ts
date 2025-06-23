@@ -3,6 +3,7 @@ export * from './datasources/todo.datasource';
 export * from './repositories/todo.repository';
 export * from './entities/todo.entity';
 export * from './dtos';
+export * from './errors/custom.error'
 
 export * from './use-cases/todo/create-todo';
 export * from './use-cases/todo/delete-todo';

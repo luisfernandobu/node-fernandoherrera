@@ -37,14 +37,14 @@ export class AuthService {
 
     public async loginUser(loginUserDto: LoginUserDto) {
         const user = await UserModel.findOne({ email: loginUserDto.email });
-        if (!user) throw CustomError.badRequest('Email and password incorrect');
+        if (!user) throw CustomError.badRequest('Email and password are incorrect');
         
         const passwordMatches = bcryptAdapter.compare(loginUserDto.password, user.password);
-        if (!passwordMatches) throw CustomError.badRequest('Email and password incorrect');
+        if (!passwordMatches) throw CustomError.badRequest('Email and password are incorrect');
         
         const { password, ...userEntity } = UserEntity.fromObject(user);
 
-        const token = await JwtAdapter.generateToken({ id: user.id, email: user.email });
+        const token = await JwtAdapter.generateToken({ id: user.id });
         if (!token) throw CustomError.internalServer('Error creating JWT');
         
         return { 

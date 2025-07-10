@@ -1,8 +1,3 @@
-/* Importar:
-    envs
-    routes
-    server
-*/
 import { envs } from "./config/envs";
 import { MongoDatabase } from "./data";
 import { AppRoutes } from "./presentation/routes";

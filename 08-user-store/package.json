@@ -6,7 +6,8 @@
     "dev": "tsnd --respawn --clear src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf ./dist && tsc",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "seed": "tsnd src/data/seed/seed.ts"
   },
   "keywords": [],
   "author": "",

@@ -8,3 +8,8 @@ dist/
 /coverage
 /postgres
 /mongo
+
+/uploads/**/*.jpg
+/uploads/**/*.jpeg
+/uploads/**/*.png
+/uploads/**/*.gif

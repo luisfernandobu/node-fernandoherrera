@@ -11,7 +11,7 @@ export class GithubController {
 
     webhookHandler = (req: Request, res: Response) => {
         const githubEvent = req.header('x-github-event') ?? 'unknown';
-        const payload = req.body;
+        const payload = req.body || {};
         let message: string;
 
         switch (githubEvent) {
